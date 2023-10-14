@@ -105,7 +105,7 @@ class Bank:
         user = self.__users.get(email)
         toUser = self.__users.get(toEmail)
         if user is None or toUser is None:
-            print(userNotRegistered)
+            print('Account does not exist')
             return
         if user.getBalance() < amount:
             print('No enough funds')
